@@ -1,8 +1,11 @@
 module.exports = {
   content: [
-    './app/views/**/*.html.erb',
+    // "../myapp/app/**/*.{html,js}",
+    './public/*.html',
+    './public/*.html.erb',
     './app/helpers/**/*.rb',
-    './app/assets/stylesheets/**/*.css',
-    './app/javascript/**/*.js'
-  ]
+    './app/javascript/**/*.js',
+    './app/views/**/*.{erb,haml,html,slim}',
+    "../ecommerce/app/**/*.{html.erb, html, js}", //<="html.erb"を指定する
+  ],
 }
